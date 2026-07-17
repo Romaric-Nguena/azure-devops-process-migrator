@@ -1,0 +1,57 @@
+{
+  "name": "azure-devops-process-migrator-cli",
+  "version": "1.0.0",
+  "description": "Secure Node.js CLI to export, import and migrate inherited Azure DevOps processes between organizations.",
+  "main": "build/nodejs/Main.js",
+  "bin": {
+    "azdo-process-migrator": "build/nodejs/Main.js",
+    "process-migrator": "build/nodejs/Main.js"
+  },
+  "files": [
+    "build",
+    "configuration.example.jsonc",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "clean": "node -e \"require('node:fs').rmSync('build', { recursive: true, force: true })\"",
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.js",
+    "check": "npm test && npm pack --dry-run",
+    "start": "node build/nodejs/Main.js",
+    "prepack": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Romaric-Nguena/azure-devops-process-migrator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Romaric-Nguena/azure-devops-process-migrator/issues"
+  },
+  "homepage": "https://github.com/Romaric-Nguena/azure-devops-process-migrator#readme",
+  "keywords": [
+    "azure-devops",
+    "azure-boards",
+    "inherited-process",
+    "process-migration",
+    "work-items",
+    "typescript",
+    "cli"
+  ],
+  "author": "Romaric Nguena",
+  "license": "MIT",
+  "dependencies": {
+    "azure-devops-node-api": "16.0.0",
+    "jsonc-parser": "^3.3.1",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^22.19.0",
+    "typescript": "^7.0.2"
+  }
+}

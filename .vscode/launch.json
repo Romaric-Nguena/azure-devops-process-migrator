@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "CLI: help",
+      "program": "${workspaceFolder}/build/nodejs/Main.js",
+      "preLaunchTask": "npm: build",
+      "args": ["--help"],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/build/**/*.js"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "CLI: migrate",
+      "program": "${workspaceFolder}/build/nodejs/Main.js",
+      "preLaunchTask": "npm: build",
+      "args": ["--mode", "migrate", "--config", "configuration.json"],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/build/**/*.js"]
+    }
+  ]
+}

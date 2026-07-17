@@ -1,0 +1,10 @@
+src/
+test/
+.github/
+.vscode/
+AGENTS.md
+CONTRIBUTING.md
+configuration.json
+configuration.local.json
+output/
+*.log

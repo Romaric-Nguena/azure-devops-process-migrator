@@ -1,0 +1,23 @@
+{
+  // Azure DevOps organization URLs. HTTPS is required.
+  "sourceAccountUrl": "https://dev.azure.com/source-organization",
+  "targetAccountUrl": "https://dev.azure.com/target-organization",
+
+  // Name of the inherited process to export.
+  "sourceProcessName": "Agile - Custom",
+
+  // Optional: name to use in the target organization.
+  "targetProcessName": "Agile - Imported",
+
+  // PATs are deliberately absent from this file.
+  // Use AZDO_SOURCE_PAT and AZDO_TARGET_PAT instead.
+  "options": {
+    "processFilename": "output/process.json",
+    "logFilename": "output/process-migrator.log",
+    "logLevel": "information",
+    "overwritePicklist": false,
+    "continueOnRuleImportFailure": false,
+    "continueOnIdentityDefaultValueFailure": false,
+    "skipImportFormContributions": false
+  }
+}
