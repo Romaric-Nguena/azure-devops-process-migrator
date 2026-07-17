@@ -161,8 +161,6 @@ Les tests couvrent notamment le parseur CLI, la validation de configuration, les
 
 ## Publication sur GitHub
 
-Le guide détaillé se trouve dans [`CODEX_GITHUB_GUIDE.md`](CODEX_GITHUB_GUIDE.md).
-
 Avant le premier push, remplacer dans `package.json` :
 
 - `YOUR_GITHUB_USERNAME` ;

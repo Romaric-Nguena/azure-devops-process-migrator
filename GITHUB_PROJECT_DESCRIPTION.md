@@ -32,4 +32,4 @@ CLI Node.js/TypeScript sécurisé pour exporter, importer et migrer des processu
 - Compatibilité Windows, Linux et macOS.
 - 13 tests automatisés hors connexion.
 - CI GitHub Actions sur Node.js 20, 22 et 24.
-- Dependabot et instructions Codex inclus.
+- Dependabot inclus.

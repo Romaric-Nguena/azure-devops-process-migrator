@@ -10,4 +10,4 @@
 - Correction des chemins de sortie pour Windows, Linux et macOS.
 - Ajout de 13 tests automatisés hors connexion.
 - Ajout d’une CI GitHub Actions sur Node.js 20, 22 et 24.
-- Ajout de Dependabot, `AGENTS.md` et de la documentation de publication avec Codex.
+- Ajout de Dependabot pour npm et GitHub Actions.
