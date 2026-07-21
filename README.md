@@ -180,4 +180,4 @@ Consulter [`SECURITY.md`](SECURITY.md). Si un PAT a déjà été copié dans une
 
 ## Licence et attribution
 
-Licence MIT. Le fichier [`LICENSE`](LICENSE) conserve la licence du projet d’origine Microsoft. Les changements de cette version sont décrits dans [`CHANGELOG.md`](CHANGELOG.md).
+Licence MIT. Le fichier [`LICENSE`](LICENSE) conserve la licence du projet d’origine Microsoft. Les changements de cette version sont décrits et visibles dans [`CHANGELOG.md`](CHANGELOG.md).
